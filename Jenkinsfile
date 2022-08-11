@@ -17,15 +17,7 @@ pipeline {
               sh 'echo hello there. this is finalization'
           }
        }
-      post {
-          failure {
-            sh 'echo the build failed'
-      }
-          success {
-            sh 'echo the build is successful'
-      }       
-          always {
-            sh 'echo the build as completed'
+      
         }        
       }        
    }
